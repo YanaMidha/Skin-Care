@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+   
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(246, 227, 201, 0.916);
+    color: #fff;
+}
+
+.content{
+    text-align: left;
+    font-size: medium;
+    /*color: rgba(121, 84, 61, 0.913);*/
+   /* color: rgb(134, 112, 83);*/
+    color: rgb(104, 80, 50);
+    margin-top: 7%;
+    float: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 4%;
+}
+.main-heading{
+    font-size: 50px;
+    margin-top: 1.2%;
+    margin-bottom: 1.2%;
+}
+.heading{
+    font-size: 35px;
+    margin-top: 1.2%;
+    margin-bottom: 1.2%;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    color: #fff;
+    padding-right: 4%;
+    background-color: rgb(104, 80, 50);
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: .95em;
+    z-index: 2;
+    letter-spacing: 0.5px;
+    justify-content: space-between;
+    margin-left: 0%;
+    text-decoration: none;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.navbar li {
+    list-style: none;
+    display: inline-block;
+    cursor: pointer;
+    transition: color 0.5s;
+}
+
+
+.navbar a:hover {
+    color: rgb(248, 216, 172);
+}
+
+
+#wrap{
+	width: 90%;
+	max-width: 1100px;
+	margin: 50px auto;
+}
+.columns_2 figure{
+   width:49%;
+   margin-right:1%;
+}
+.columns_2 figure:nth-child(2){
+	margin-right: 0;
+}
+.columns_3 figure{
+   width:32%;
+   margin-right:1%;
+}
+.columns_3 figure:nth-child(3){
+	margin-right: 0;
+}
+.columns_4 figure{
+   width:24%;
+   margin-right:1%;
+}
+.columns_4 figure:nth-child(4){
+	margin-right: 0;
+}
+.columns_5 figure{
+   width:19%;
+   margin-right:1%;
+}
+.columns_5 figure:nth-child(5){
+	margin-right: 0;
+}
+#columns figure:hover{
+	-webkit-transform: scale(1.1);
+	-moz-transform:scale(1.1);
+	transform: scale(1.1);
+
+}
+#columns:hover figure:not(:hover) {
+	opacity: 0.4;
+}
+div#columns figure {
+	display: inline-block;
+	background: #FEFEFE;
+	border: 2px solid #FAFAFA;
+	box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+	margin: 0 0px 15px;
+	-webkit-column-break-inside: avoid;
+	-moz-column-break-inside: avoid;
+	column-break-inside: avoid;
+	padding: 15px;
+	padding-bottom: 5px;
+	background: -webkit-linear-gradient(45deg, #FFF, #F9F9F9);
+	opacity: 1;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+div#columns figure img {
+	width: 100%;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 15px;
+	margin-bottom: 5px;
+}
+
+div#columns figure figcaption {
+  font-size: .9rem;
+  color: #444;
+  line-height: 1.5;
+  height:60px;
+  font-weight:600;
+  text-overflow:ellipsis;
+}
+
+a.button{
+  padding:10px;
+  background:rgb(104, 80, 50);
+  margin:10px;
+  display:block;
+  text-align:center;
+  color:#fff;
+  transition:all 1s linear;
+  text-decoration:none;
+  text-shadow:1px 1px 3px rgba(0,0,0,0.3);
+  border-radius:3px;
+  border-bottom:3px solid #68392a;
+  box-shadow:1px 1px 3px rgba(0,0,0,0.3);
+}
+a.button:hover{
+  background:#ecc888;
+  border-bottom:3px solid rgb(95, 60, 56);
+  color:#f1f2f3;
+}
+@media screen and (max-width: 960px) { 
+  #columns figure { width: 24%; }
+}
+@media screen and (max-width: 767px) {
+  #columns figure { width:32%;}
+}
+@media screen and (max-width: 600px) {
+  #columns figure { width: 49%;}
+}
+@media screen and (max-width: 500px) {
+  #columns figure { width: 100%;}
+}

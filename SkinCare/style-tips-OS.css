@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    background-image: url(/images/bacground.png);
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(246, 227, 201, 0.916);
+    color: #fff;
+    background-image:linear-gradient(rgba(253, 252, 252, 0.53), rgba(254, 252, 249, 0.53)), url('img18.webp');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; 
+}
+.content{
+    text-align: left;
+    font-size: medium;
+    /*color: rgba(121, 84, 61, 0.913);*/
+   /* color: rgb(134, 112, 83);*/
+    color: rgb(104, 80, 50);
+    margin-top: 7%;
+    float: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 4%;
+}
+.main-heading{
+    font-size: 50px;
+    margin-top: 1.2%;
+    margin-bottom: 1.2%;
+}
+.heading{
+    font-size: 35px;
+    margin-top: 1.2%;
+    margin-bottom: 1.2%;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    color: #fff;
+    padding-right: 4%;
+    background-color: rgb(104, 80, 50);
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: .95em;
+    z-index: 2;
+    letter-spacing: 0.5px;
+    justify-content: space-between;
+    margin-left: 0%;
+    text-decoration: none;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.navbar li {
+    list-style: none;
+    display: inline-block;
+    cursor: pointer;
+    transition: color 0.5s;
+}
+
+
+.navbar a:hover {
+    color: rgb(248, 216, 172);
+}
+

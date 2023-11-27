@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    background-image: url(/images/bacground.png);
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(246, 227, 201, 0.916);
+    color: #fff;
+}
+
+.content{
+    text-align: left;
+    font-size: medium;
+    color: rgb(104, 80, 50);
+    margin-top: 7%;
+    float: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 4%;
+}
+.main-heading{
+    font-size: 50px;
+    margin-top: 1.2%;
+    margin-bottom: 1.2%;
+}
+.heading{
+    font-size: 35px;
+    margin-top: 1.2%;
+    margin-bottom: 1.2%;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    color: #fff;
+    padding-right: 4%;
+    background-color: rgb(104, 80, 50);
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: .95em;
+    z-index: 2;
+    letter-spacing: 0.5px;
+    justify-content: space-between;
+    margin-left: 0%;
+    text-decoration: none;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.navbar li {
+    list-style: none;
+    display: inline-block;
+    cursor: pointer;
+    transition: color 0.5s;
+}
+
+
+.navbar a:hover {
+    color: rgb(248, 216, 172);
+}
+
+
+/*=========Recent-post==========*/
+.title_bx h3.title {
+    font-size: 22px;
+    text-transform: capitalize;
+    position: relative;
+    color: #fd7f34;
+    font-weight: 700;
+    line-height: 1.2em;
+}
+.title_bx h3.title:before {
+    content: "";
+    height: 2px;
+    width: 20%;
+    position: absolute;
+    left: 0px;
+    z-index: 1;
+    top: 40px;
+    background-color: #fd7f34;
+}
+.title_bx h3.title:after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    top: 40px;
+    background-color: #ffc107;
+}
+.common_wd .owl-nav .owl-prev, .common_wd .owl-nav .owl-next {
+    background-color: #562b12 !important;
+    display: block;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    border-radius: 0px !important;
+}
+.owl-nav .owl-next {
+    right:-10px;
+}
+.owl-nav .owl-prev, .owl-nav .owl-next {
+    top:50%;
+    position: absolute;
+}
+.common_wd .owl-nav .owl-prev i, .common_wd .owl-nav .owl-next i {
+    color: #fff;
+    font-size: 14px !important;
+    position: relative;
+    top: -1px;
+}
+.common_wd .owl-nav {
+    position: absolute;
+    top: -21%;
+    right: 4px;
+    width: 65px;
+}
+.owl-nav .owl-prev i, .owl-nav .owl-next i {
+    left: 0px;
+}
+._p-qty .decrease_ {
+    position: relative;
+    right: -5px;
+    top: 3px;
+}
+
+._p-qty .increase_ {
+    position: relative;
+    top: 3px;
+    left: -5px;
+}
+/*========box========*/
+
+.sq_box {
+    padding-bottom: 5px;
+   /* border-bottom: solid 2px #fd7f34;*/
+    background-color: rgba(246, 227, 201, 0.916);
+    text-align: center;
+    padding: 15px 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+.item .sq_box span.wishlist {
+    right: 5px !important;
+}
+.sq_box span.wishlist {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+.sq_box span {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0px 10px;
+}
+.sq_box span.wishlist i {
+    color: #adb5bd;
+    font-size: 20px;
+}
+.sq_box h4 {
+    font-size: 18px;
+    text-align: center;
+    font-weight: 500;
+    color: #343a40;
+    margin-top: 10px;
+    margin-bottom: 10px !important;
+}
+.sq_box .price-box {
+    margin-bottom: 15px !important;
+}
+.sq_box .btn {
+    border-radius: 50px;
+    padding: 5px 13px;
+    font-size: 15px;
+    color: #fff;
+    background-color: #683f28;
+    font-weight: 600;
+}
+.sq_box .price-box span.price {
+    text-decoration: line-through;
+    color: #6c757d;
+}
+.sq_box span {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0px 10px;
+}
+.sq_box .price-box span.offer-price {
+    color:#28a745;
+}
+.sq_box img {
+    object-fit: cover;
+    height: 150px !important;
+    margin-top: 20px;
+}
+.sq_box span.wishlist i:hover {
+    color: #fd7f34;
+}
